@@ -70,12 +70,19 @@ E5 已知体型仅在 BenchmarkRunner 用真值骨长做 FK；默认推理不读
 逐关节、左右、持拍侧和速度标签保存在 JSON；测试组只有少量慢速配置，不宣称覆盖快速羽毛球。
 未进行大规模、多种子、Transformer、真实人体、专项动作或硬件实验。
 
-## Git 交付
+## Git 交付（首次本地 smoke 交付记录）
 
 Git 2.47.1 已存在，无需重复安装。已 git init -b main；作者采用用户提供身份，仅设项目局部配置。
 无 remote；GitHub CLI 不存在。Edge 虽已登录，自动化因无法可靠确认当前 URL 而被工具停止，未绕过。
 创建状态 blocked_external；private 未验证；推送未进行；远程 SHA unavailable；远程 CI not_run。
 本地提交 SHA 由交付时 git rev-parse HEAD 确认，不把 init 或 commit 描述为 GitHub 创建成功。
+
+### GitHub 同步续办（2026-11-09）
+
+首次记录之后，用户提供了仓库 https://github.com/DP-kEn9/badminton-imu-coach 并明确授权公开上传。
+origin 已设置为该项目地址；GitHub API 已确认 public，当前认证账号具备 push 权限。认证由用户通过本机 Git Credential Manager 完成，凭证未写入项目。
+远程分支检查为空，不覆盖已有分支。上传范围为源码、测试、配置模板及文档，包含 README；本地数据、权重、虚拟环境、秘密及完整运行日志排除。
+完整提交历史已经扫描；推送 SHA 与 CI 状态以 GitHub 实际结果和本次交付回执为准。首次记录中的 private 约束已由用户后续明确的公开上传授权更新。
 
 ## 验收结论
 

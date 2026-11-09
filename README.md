@@ -4,6 +4,13 @@
 
 当前交付是 **smoke 工程验证**。所有样例均为 `synthetic_analytic / synthetic_demo_only`；授权动作、真实硬件和产品能力均 `not_validated`。未部署服务，也不启动后台训练。
 
+项目仓库：[DP-kEn9/badminton-imu-coach](https://github.com/DP-kEn9/badminton-imu-coach)。仓库公开上传已经项目所有者明确授权；未选择开源许可证。
+
+```powershell
+git clone https://github.com/DP-kEn9/badminton-imu-coach.git
+cd badminton-imu-coach
+```
+
 ## 安装与运行
 
 Python 3.11+；本机实际验证 Windows / Python 3.12.14 / CPU。使用项目虚拟环境，不修改系统 Python。
@@ -41,4 +48,6 @@ python -m badminton_coach.cli report --run-dir artifacts/smoke-v02 --backend tem
 
 报告后端支持 template / mock / replay / live；live 必须显式设置 `.env.example` 中配置，程序不会自动读取 `.env`。只发送结构化证据；LLM 只能选择证据 ID，数值由程序渲染；失败降级模板。没有进行付费 live 请求。
 
-更多设计和功能状态见 `docs/`、`IMPLEMENTATION_REPORT.md`、`TEST_REPORT.md` 和 `KNOWN_LIMITATIONS.md`。未选择开源许可证。
+设计文档：[阶段规划](docs/01_产品开发阶段规划.md)、[功能需求](docs/02_第一阶段实现功能需求.md)、[技术路线](docs/03_第一阶段技术路线.md)。
+
+交付记录：[实施报告](IMPLEMENTATION_REPORT.md)、[测试报告](TEST_REPORT.md)、[已知限制](KNOWN_LIMITATIONS.md)、[下一步](NEXT_STEPS.md)。

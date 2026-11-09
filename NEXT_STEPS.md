@@ -5,4 +5,4 @@
 3. 用开发集冻结质量门槛，做匹配 oracle/fused、近端/远端重训练、独立扰动、多种子实验，并比较 chordal 与 rad 损失。
 4. 核查少量真实四节点安装、时间锚点、校准和融合信号；不强制第一阶段购置整套硬件。
 5. 接入经授权的球拍刚体与专项标签，专业错误标签由教练审核。
-6. 远程续办：配置 GitHub 推送认证并提供目标私有仓库 URL；验证 private 后添加 origin、正常 push main、比较 SHA。绝不在聊天中粘贴 token。
+6. 远程仓库已由用户明确授权公开上传，地址为 https://github.com/DP-kEn9/badminton-imu-coach 。正常 push main 后比较本地和远程 SHA，跟进 CPU CI；不得强推或上传数据、权重、秘密。认证在本机完成，绝不在聊天中粘贴 token。
