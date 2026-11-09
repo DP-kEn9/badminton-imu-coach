@@ -1,0 +1,16 @@
+seed: 20261109
+sample_rate_hz: 100
+duration_s: 4
+calibration_s: 1
+window: 200
+stride: 100
+hidden: 64
+layers: 2
+batch: 8
+epochs: 12
+lr: 0.001
+groups: 18
+orientation_mode: fused_orientation
+fusion_backend: vqf_offline
+data_mode: demo_synthetic
+output: artifacts/train

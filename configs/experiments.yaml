@@ -1,0 +1,10 @@
+scope: synthetic_demo_only
+runner: badminton_coach.pipeline.evaluate
+base: configs/smoke.yaml
+E1: {comparison: fused BiGRU versus train-only SO3 mean, status: smoke_run}
+E2: {comparison: oracle inputs versus fused inputs, training: fused checkpoint cross-mode only, matched_oracle_training: deferred}
+E3: {comparison: distal versus proximal shank, training: distal checkpoint cross-layout}
+E4: {comparison: clean versus compound exploratory disturbances, status: smoke_run, calibrated_hardware_parameters: false}
+E5: {comparison: default FK offsets versus truth offsets, access: benchmark_only}
+E6: {comparison: forearm angular speed peak direct versus FK global segment, independent_validation: false}
+reproducibility: evaluator uses fixed source group IDs from checkpoint; matrix describes its smoke conditions

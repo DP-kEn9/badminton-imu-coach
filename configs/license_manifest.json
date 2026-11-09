@@ -1,0 +1,5 @@
+{
+  "schema_version": "0.2",
+  "assets": [],
+  "template": {"asset_id": "", "category": "motion|body_model|weights|code", "source": "", "version": "", "sha256": "", "path": "", "format": "analytic_npz_v1|analytic_skeleton_v1", "intended_use": "local_research", "license": "", "authorization_status": "pending", "allowed_processing": [], "allowed_distribution": [], "credential_reference": "local-only; never commit proof"}
+}
